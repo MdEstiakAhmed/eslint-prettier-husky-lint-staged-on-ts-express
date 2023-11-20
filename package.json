@@ -5,17 +5,21 @@
   "main": "src/server.ts",
   "scripts": {
     "start": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
-    "lint:fix": "eslint . --fix",
-    "prettier:check": "prettier --ignore-path .prettierignore --check .",
+    "lint:check": "eslint --ignore-path .eslintignore \"src/**/*.+(js|ts|json)\"",
+    "lint:fix": "eslint \"src/**/*.+(js|ts|json)\" --fix",
+    "lint:staged": "eslint --ignore-path .eslintignore",
+    "prettier:check": "prettier --ignore-path .prettierignore --check \"src/**/*.+(js|ts|json)\"",
     "prettier:fix": "prettier --ignore-path .prettierignore --write \"**/*.+(js|ts|json)\"",
+    "prettier:staged": "prettier --ignore-path .prettierignore --write",
     "lint-prettier:check": "npm run lint:check && npm run prettier:check",
     "lint-prettier:fix": "npm run lint:fix && npm run prettier:fix",
-    "check:fix": "npm run lint:check && npm run prettier:fix",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "src/**/*.ts": "npm run check:fix"
+    "src/**/*.ts": [
+      "npm run lint:staged",
+      "npm run prettier:staged"
+    ]
   },
   "repository": {
     "type": "git",
