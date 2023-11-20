@@ -1,4 +1,4 @@
-# Boilerplate: typescript, express and mongodb
+# A boilerplate for typescript-express project with eslint, prettier, husky and lint-staged
 
 # Create boilerplate from scratch
 ## Step 1 (initialize npm): 
