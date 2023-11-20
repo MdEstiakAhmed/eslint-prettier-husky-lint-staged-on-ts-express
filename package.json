@@ -16,7 +16,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "src/**/*.ts": [
+    "src/**/*.{js,ts,json,css,scss,md}": [
       "npm run lint:staged",
       "npm run prettier:staged"
     ]
@@ -26,9 +26,12 @@
     "url": "git+https://github.com/MdEstiakAhmed/eslint-prettier-husky-lint-staged-on-ts-express.git"
   },
   "keywords": [
+    "eslint",
+    "prettier",
+    "husky",
+    "lint-staged",
     "typescript",
     "express",
-    "mongodb",
     "boilerplate"
   ],
   "author": "Md. Estiak Ahmed",
