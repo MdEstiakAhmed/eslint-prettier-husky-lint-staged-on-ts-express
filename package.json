@@ -11,10 +11,11 @@
     "prettier:fix": "prettier --ignore-path .prettierignore --write \"**/*.+(js|ts|json)\"",
     "lint-prettier:check": "npm run lint:check && npm run prettier:check",
     "lint-prettier:fix": "npm run lint:fix && npm run prettier:fix",
+    "check:fix": "npm run lint:check && npm run prettier:fix",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "src/**/*ts": "npm run lint-prettier:fix"
+    "src/**/*.ts": "npm run check:fix"
   },
   "repository": {
     "type": "git",
