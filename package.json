@@ -13,6 +13,9 @@
     "lint-prettier:fix": "npm run lint:fix && npm run prettier:fix",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "src/**/*ts": "npm run lint-prettier:fix"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MdEstiakAhmed/ts-express-mongodb-boilerplate.git"
@@ -36,10 +39,11 @@
     "@typescript-eslint/parser": "^6.11.0",
     "eslint": "^8.54.0",
     "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.1.0",
     "prettier": "^3.1.0",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.2.2",
-    "husky": "^8.0.0"
+    "typescript": "^5.2.2"
   },
   "dependencies": {
     "cors": "^2.8.5",
