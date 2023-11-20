@@ -16,8 +16,17 @@
     "outDir": "./dist"
     "rootDir": "./src"
     ```
+- add include and exclude at root level in tsconfig.json
+    ```
+    "include": ["src/**/*"]
+    "exclude": ["node_modules"]
+    ```
 - install ts-node-dev: `npm install -D ts-node-dev`
 - add or update start script in package.json: `"start": "ts-node-dev --respawn --transpile-only src/server.ts"`
+
+## step 3 (install eslint and prettier):
+- `npm install -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin`
+- create eslint config file: `npx eslint --init`
 
 ## Step 4 (install packages)
 - `npm install express`
