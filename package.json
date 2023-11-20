@@ -1,7 +1,7 @@
 {
-  "name": "ts-express-mongodb",
+  "name": "eslint-prettier-husky-lint-staged-on-ts-express",
   "version": "1.0.0",
-  "description": "A boilerplate for typescript, express and mongodb project",
+  "description": "A boilerplate for typescript-express project with eslint, prettier, husky and lint-staged",
   "main": "src/server.ts",
   "scripts": {
     "start": "ts-node-dev --respawn --transpile-only src/server.ts",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MdEstiakAhmed/ts-express-mongodb-boilerplate.git"
+    "url": "git+https://github.com/MdEstiakAhmed/eslint-prettier-husky-lint-staged-on-ts-express.git"
   },
   "keywords": [
     "typescript",
@@ -34,9 +34,9 @@
   "author": "Md. Estiak Ahmed",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MdEstiakAhmed/ts-express-mongodb-boilerplate/issues"
+    "url": "https://github.com/MdEstiakAhmed/eslint-prettier-husky-lint-staged-on-ts-express/issues"
   },
-  "homepage": "https://github.com/MdEstiakAhmed/ts-express-mongodb-boilerplate#readme",
+  "homepage": "https://github.com/MdEstiakAhmed/eslint-prettier-husky-lint-staged-on-ts-express#readme",
   "devDependencies": {
     "@types/cors": "^2.8.16",
     "@types/express": "^4.17.21",

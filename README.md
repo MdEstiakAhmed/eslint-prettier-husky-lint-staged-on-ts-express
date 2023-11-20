@@ -31,10 +31,4 @@
 ## Step 4 (install packages)
 - `npm install express`
 - `npm install -D @types/express`
-- `npm install mongoose`
 - `npm install dotenv`
-
-
-## if mongodb is not connected or connection error occurs:
-run `sudo systemctl status mongod`
-run `sudo systemctl start mongod`
